@@ -1,0 +1,7 @@
+import calendar
+
+
+print(calendar.calendar(2020))
+print(calendar.weekday(2020,4,20))
+print(calendar.isleap(2000))
+print(calendar.leapdays(2000, 3000))
