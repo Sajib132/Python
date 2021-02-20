@@ -4,10 +4,9 @@ el=[int(x) for x in input("Enter the elements: ").split(",")]
 print("Entered values are: " ,el)
 
 n=len(el)
-p=n-1
 flag=False
-for i in range(p):
-    for j in range(p-i):
+for i in range(n-1,0,-1):
+    for j in range(i):
         if el[j] > el[j+1]:
             t=el[j]
             el[j]=el[j+1]
@@ -18,3 +17,4 @@ for i in range(p):
     else:
         flag=False
 print("Sorted Array: ",el)
+
